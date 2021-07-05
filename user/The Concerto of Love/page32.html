@@ -1,0 +1,276 @@
+ <!DOCTYPE html>
+<html lang="cn" dir="ltr" class="no-js">
+<head>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="maximum-scale=1.0,width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>龙之源 </title>
+    <link rel="icon" type="image/x-ico" href="../../assets/img/favicon.ico" />
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../assets/css/style.css" rel="stylesheet" />
+    <link href="../../assets/css/nprogress.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/css/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../../assets/css/default.css" type="text/css" media="screen" />
+    <script src="../../assets/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="../../assets/APlayer/dist/APlayer.min.css">
+    <script src="../../assets/js/jquery.nivo.slider.pack.js"></script>
+    <script src="../../assets/js/nprogress.js"></script>
+     <link href="../../assets/css/audio.css" rel="stylesheet" type="text/css" />
+     <link href="../../assets/css/page.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/texiao.js"></script>
+    <link rel="stylesheet" href="../../assets/css/GalMenu.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/live2d/css/fla.css"/> 
+    <link rel="stylesheet" type="text/css" href="../../assets/live2d/css/waifu.css"/>
+<div>
+<div class="waifu" id="waifu">
+		<div class="waifu-tips" style="opacity: 1;"></div>
+		<canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+               <div class="waifu-tool">
+            <span class="fui-home"></span>
+            <span class="fui-chat"></span>
+            <span class="fui-eye"></span>
+            <span class="fui-user"></span>
+            <span class="fui-photo"></span>
+            <span class="fui-info-circle"></span>
+            <span class="fui-cross"></span>
+        </div>
+</div>
+<script src="../../assets/live2d/js/live2d.js"></script>
+<script src="../../assets/live2d/js/waifu-tips.js"></script>
+<script type="text/javascript">initModel()</script>
+</div> 
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">
+              Toggle navigation
+            </span>
+            <span class="icon-bar">
+            </span>
+            <span class="icon-bar">
+            </span>
+            <span class="icon-bar">
+            </span>
+            </button>
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../../assets/img/logo.png" class="logo"/>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav header-menu">
+                <li>
+                    <a href="../../index.html">
+                        首页
+                    </a>
+                </li>
+                <li>
+                    <a href="../../about.html">
+                        关于
+                    </a>
+                </li>
+                <li>
+                    <a href="../../blog.html">
+                        博客
+                    </a>
+                </li>
+                <li>
+                    <a href="../../works.html">
+                        作品
+                    </a>
+                </li>
+                <li>
+                    <a href="../../links.html">
+                        链接
+                    </a>
+                </li>
+                <li>
+                    <a href="../../contact.html">
+                        联系
+                    </a>
+                </li>
+                <li>
+                    <a href="../../help.html">
+                        帮助
+                    </a>
+                </li> 
+            </ul>
+        </div>
+    </div>
+</nav>
+</div>
+<!--Start banner img-->
+<div class="container-filed" id="banner_container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="slider-wrapper theme-default">
+                <div id="slider" class="nivoSlider">
+                    <img src="../../assets/img/ow1.jpg" data-thumb="../../assets/img/ow1.jpg" alt="" />
+                    <img src="../../assets/img/ow2.jpg" data-thumb="../../assets/img/ow2.jpg" alt="" />
+                    <a href="../../assets/img/ow3.jpg"><img src="../../assets/img/ow3.jpg" alt="" /></a>
+                    <img src="../../assets/img/ow1.jpg" data-thumb="../../assets/img/ow1.jpg" alt="" />
+                    <img src="../../assets/img/ow2.jpg" data-thumb="../../assets/img/ow2.jpg" alt="" />
+                    <img src="../../assets/img/ow3.jpg" data-thumb="../../assets/img/ow3.jpg" alt="" />
+                    <img src="../../assets/img/ow4.jpg" data-thumb="../../assets/img/ow4.jpg" alt="" />
+                    <a href="../../assets/img/ow5.jpg"><img src="../../assets/img/ow5.jpg" alt="" /></a>
+                    <img src="../../assets/img/ow4.jpg" data-thumb="../../assets/img/ow4.jpg" alt="" />
+                    <img src="../../assets/img/ow5.jpg" data-thumb="../../assets/img/ow5.jpg" alt="" />
+                    <a href="../../assets/img/ow8.jpg"><img src="../../assets/img/ow8.jpg" alt="" /></a>
+                    <img src="../../assets/img/ow7.jpg" data-thumb="../../assets/img/ow7.jpg" alt="" />
+                    <a href="../../assets/img/ow9.jpg"><img src="../../assets/img/ow9.jpg" alt="" /></a>
+                    <img src="../../assets/img/ow6.jpg" data-thumb="../../assets/img/ow6.jpg" alt="" />
+                    <img src="../../assets/img/ow7.jpg" data-thumb="../../assets/img/ow7.jpg" alt="" />
+                    <img src="../../assets/img/ow8.jpg" data-thumb="../../assets/img/ow8.jpg" alt="" />
+                    <a href="../../assets/img/ow6.jpg"><img src="../../assets/img/ow6.jpg" alt="" /></a>
+                    <img src="../../assets/img/ow9.jpg" data-thumb="../../assets/img/ow9.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End banner img-->
+<div class="container-fluid main-container" id="main-container">
+    <div class="row top-title">
+        <div class="col-md-12">
+            <h1 class="page-title right">
+                <a href="../../blog.html">博客</a> >> <a href="page32.html">爱的协奏曲</a>
+            </h1>
+        </div>
+    
+    <div class="row">
+        <div class="col-md-12 post-container">
+        <h4 style="text-align:center; background-color:#FFD2D3; font-family: tahoma; margin: 10px 5px 10px;">
+         <p style="background-color:#FFD2D3; text-align:left;"><br>握着她冰冷的手，“小珂！是我！哥回来了！哥回来看你了！”她慢慢的张开眼睛，头向我这边转过来，努力的冲着我笑笑，我摘掉她的氧气罩，她用微弱的声音说：“哥！你终于肯回来了！”我的眼泪又止不住的流下来，“小珂！哥哥错了！”我知道她想和我单独呆一会儿，我回头对爸妈说：“你们都累了，回家休息一会儿吧！我在这里陪她！”“好吧！那我们走了，你陪她吧，别让她太累了！”“好！放心吧！”“小珂，妈妈和爸爸回去了！乖！”妈妈摸了摸她的脸，她闭了一下眼睛表示同意！</p>
+         <p style="background-color:#FFD2D3; text-align:left;"><p style="background-color:#FFD2D3; text-align:left;">长时间的沉默和对望，我不知道该说些什么，她也是一直努力的保持着微笑看着我，我宁愿她像从前一样从床上蹦起来骂我一顿！“很意外是吗？”她先打破了僵局，“你自己是什么时候知道的？”“就在去年暑假！”“暑假？”“就在那晚！其实在浴室里我是真的晕倒了！”“我一直以为……以为你是装的，在骗我！”“呵呵！你后悔吗？”我知道她问的是那件事，“刘珂，是哥错了！我……不该那样做！”“不！你没有错！是我自愿的！”她的手还是那么冷，却紧紧的握住我的手，“哥！对不起！”“傻丫头，你有什么错！是哥对不起你！”太阳下山了，残留的血红色在窗子的西北角射进病房投映在雪白的床上，没有声音，只有我轻声的流着眼泪，“哥！你知道吗？”“什么？”“呵呵，初三那年的那封情书是我写给你的。”“是你！？”“恩！可惜被我撕掉了！呵呵！”“傻丫头！”“你和她还好吗？”“还好！”“那我就放心了，这个嫂子不是我挑的，不过只要你喜欢就好！”“别说了！”我已泣不成声，“你那时候已经知道了为什么不告诉我？你太残忍了！”“真是我的笨哥哥，告诉你，会有用吗？还不是多一个人替我担心。”我现在终于知道为什么妈妈爸爸从小就那么护着她，尤其是她一生病妈妈就特别紧张，而且还不许她出远门，只能在北京上大学！“也许我不属于这个世界！现在……是要走的时候了！哥……我真的很舍不得你！如果可以，下辈子我还要爱上你，但是我一定不要做你妹妹！”一滴泪从她的眼角流下，滑过她的脸颊，我吻上那颗泪，“我爱你！”……　　</p>
+          <p style="background-color:#FFD2D3; text-align:left;">第二天，四月十日，阴天，刘珂在一家人的陪伴下安静的走了，按照她的遗愿她捐献了她的角膜。</p>
+          <p style="background-color:#FFD2D3; text-align:left;">回到家里，我把自己关在她的屋子里，这里仍然可以闻到她熟悉的味道，在她的床头挂着我给她的画，一轮火红的太阳从海平面升起，在沙滩上坐着两个人，他们并排的坐在一起，女孩一只手指着太阳。我打开她的抽屉里面竟然都是我小时候被她抢走的玩具，还有一张我们俩从小到大的成绩单，左边是我的，右边是她的，在下面有一段小字：这个笨蛋哥哥，成绩那么差，我一定要帮他考上一个好大学！！！恩！我们共同的大学！谁让我这么优秀？哈哈哈哈！然后还有她画的一个笑嘻嘻的笑脸。我被她逗乐了，这个傻丫头！旁边的抽屉上着锁，我很容易的在她经常藏东西的小罐子里找到钥匙，里面是她的日记，还有那件带血的衣服。整整七个小时，我一口气看完所有的字，合上本子的时候我再也控制不住自己，大声的哭了出来，这是我从小到大第一次放开声音的哭，痛，是怎样一种痛，苦是怎样一种苦，嗓子哑了，眼睛已经看不清东西，心整个碎了……</p>
+          <p style="background-color:#FFD2D3; text-align:left;">日记里记满了我们从小到大的每一件事，有的我根本都已经没有了印象她却还记得，我知道了她从初三那年开始爱上我，每天压抑自己的感情，她心里的痛苦和矛盾却从来没有表现出来过，一个人默默的承受着这一切。</p>
+          <p style="background-color:#FFD2D3; text-align:left;">“我们**了，我以为我的梦想实现了，他也爱上我了，最起码我们可以在心里互相爱着对方，可是第二天他却把我推给了管鸣一。可，你把我当成什么？但是我却没有一点的恨！对你，难道我已经失去了恨的能力？……珂”</p>
+ <p style="background-color:#FFD2D3; text-align:left;">最后一篇是她写给我的信，或者叫遗书……
+                         <div class="page-icon">
+	<a class="page-pre" href="page31.html"><i></i>上一页</a>
+     <a href="page31.html">31</a>
+    <span class="page-current">32</span>
+    <a href="page33.html">33</a>
+    <a href="page34.html">34</a>
+    ……
+    <a class="page-next" href="page33.html">下一页<i></i></a>
+</div>
+
+                          <div class="audio-wrapper" style="text-align:center; background-color:#FFD2D3;">
+     
+                          <audio size="#9.97MB" duration="#03:47" filename="爱的协奏曲.mp3">
+            
+                           <source src="../music/Love.mp3" type="audio/mp3">
+        
+                           </audio>
+        
+                           <div class="audio-left">
+            
+                           <img id="audioPlayer" src="../img/play.png">
+</div>
+        
+                           <div class="audio-right">
+            
+                           <p style="max-width: 536px;">爱的协奏曲.mp3</p>
+            
+                            <div class="progress-bar-bg" id="progressBarBg">
+                
+                            <span id="progressDot"></span>
+                
+                            <div class="progress-bar" id="progressBar">
+                            </div>
+            
+                            </div>
+            
+                            <div class="audio-time">
+               
+                           <span class="audio-length-current" id="audioCurTime">00:00</span>
+                
+                           <span class="audio-length-total">03:47</span>
+            
+                           </div>
+        
+                          </div>
+    
+                            </div>
+
+                       </div>
+                     <div class="post-content">
+ <hr/>
+                    </section>
+                <div class="meta-box">
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="GalMenu GalDropDown">
+	  <div class="circle" id="gal">
+		<div class="ring">
+		  <a href="../list/resources.html" title="" class="menuItem">资源</a>
+		  <a href="../list/technology.html" title="" class="menuItem">技术</a>
+		  <a href="../list/video.html" title="" class="menuItem">视频</a>
+		  <a href="../list/other.html" title="" class="menuItem">其他</a>
+		  <a href="#" title="" onclick="alert('此版块尚未激活！！！')" class="menuItem">未知</a>
+		  <a href="../../index.html" title="" class="menuItem">返回</a></div>
+		<audio id="audio" src="../music/niconiconi.mp3"></audio>
+	  </div>
+</div>
+<div id="overlay" style="opacity: 1; cursor: pointer;"></div>
+<script type="text/javascript">var items = document.querySelectorAll('.menuItem');
+  for (var i = 0,
+  l = items.length; i < l; i++) {
+	items[i].style.left = (50 - 35 * Math.cos( - 0.5 * Math.PI - 2 * (1 / l) * i * Math.PI)).toFixed(4) + "%";
+	items[i].style.top = (50 + 35 * Math.sin( - 0.5 * Math.PI - 2 * (1 / l) * i * Math.PI)).toFixed(4) + "%"
+  }</script>
+
+
+<script type="text/javascript" src="../../assets/js/GalMenu.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+	$('body').GalMenu({
+	  'menu': 'GalDropDown'
+	})
+  });
+</script>
+    <footer>
+        <!--版权信息-->
+        <div class="copyright">
+               欢迎来到 <a href="http://192.168.43.237/" target="_blank">龙之源</a>&nbsp;&nbsp;
+            <a href="http://192.168.43.237/">
+            </a>
+        </div>
+    </footer>
+</div>
+<script>
+        /*banner 初始化*/
+        $(window).load(function() {
+         $('#slider').nivoSlider({
+            effect: 'random',        // 过渡效果
+            controlNav: false,       // 是否显示图片导航控制按钮（,2,3... ）
+            pauseOnHover: true,      // 鼠标县浮时是否停止动画
+            manualAdvance: false,    // 是否手动切换 
+            animSpeed: 100,          // 图片过渡时间   
+            pauseTime: 2000,         // 图片显示时间
+            pauseOnHover: false,
+            manualAdvance: false,
+        });
+        });
+    $(document).ready(function(){
+        $('body').show();
+        $('.version').text(NProgress.version);
+        NProgress.start();
+        setTimeout(function() { NProgress.done(); $('.fade').removeClass('out'); }, 1000);
+    })         
+      
+  </script>
+</html>

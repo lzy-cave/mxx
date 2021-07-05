@@ -1,0 +1,283 @@
+ <!DOCTYPE html>
+<html lang="cn" dir="ltr" class="no-js">
+<head>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="maximum-scale=1.0,width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>龙之源 </title>
+    <link rel="icon" type="image/x-ico" href="../../assets/img/favicon.ico" />
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../assets/css/style.css" rel="stylesheet" />
+    <link href="../../assets/css/nprogress.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/css/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../../assets/css/default.css" type="text/css" media="screen" />
+    <script src="../../assets/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="../../assets/APlayer/dist/APlayer.min.css">
+    <script src="../../assets/js/jquery.nivo.slider.pack.js"></script>
+    <script src="../../assets/js/nprogress.js"></script>
+     <link href="../../assets/css/audio.css" rel="stylesheet" type="text/css" />
+     <link href="../../assets/css/page.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/texiao.js"></script>
+    <link rel="stylesheet" href="../../assets/css/GalMenu.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/live2d/css/fla.css"/> 
+    <link rel="stylesheet" type="text/css" href="../../assets/live2d/css/waifu.css"/>
+<div>
+<div class="waifu" id="waifu">
+		<div class="waifu-tips" style="opacity: 1;"></div>
+		<canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+               <div class="waifu-tool">
+            <span class="fui-home"></span>
+            <span class="fui-chat"></span>
+            <span class="fui-eye"></span>
+            <span class="fui-user"></span>
+            <span class="fui-photo"></span>
+            <span class="fui-info-circle"></span>
+            <span class="fui-cross"></span>
+        </div>
+</div>
+<script src="../../assets/live2d/js/live2d.js"></script>
+<script src="../../assets/live2d/js/waifu-tips.js"></script>
+<script type="text/javascript">initModel()</script>
+</div> 
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">
+              Toggle navigation
+            </span>
+            <span class="icon-bar">
+            </span>
+            <span class="icon-bar">
+            </span>
+            <span class="icon-bar">
+            </span>
+            </button>
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../../assets/img/logo.png" class="logo"/>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav header-menu">
+                <li>
+                    <a href="../../index.html">
+                        首页
+                    </a>
+                </li>
+                <li>
+                    <a href="../../about.html">
+                        关于
+                    </a>
+                </li>
+                <li>
+                    <a href="../../blog.html">
+                        博客
+                    </a>
+                </li>
+                <li>
+                    <a href="../../works.html">
+                        作品
+                    </a>
+                </li>
+                <li>
+                    <a href="../../links.html">
+                        链接
+                    </a>
+                </li>
+                <li>
+                    <a href="../../contact.html">
+                        联系
+                    </a>
+                </li>
+                <li>
+                    <a href="../../help.html">
+                        帮助
+                    </a>
+                </li> 
+            </ul>
+        </div>
+    </div>
+</nav>
+</div>
+<!--Start banner img-->
+<div class="container-filed" id="banner_container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="slider-wrapper theme-default">
+                <div id="slider" class="nivoSlider">
+                    <img src="../../assets/img/ow1.jpg" data-thumb="../../assets/img/ow1.jpg" alt="" />
+                    <img src="../../assets/img/ow2.jpg" data-thumb="../../assets/img/ow2.jpg" alt="" />
+                    <a href="../../assets/img/ow3.jpg"><img src="../../assets/img/ow3.jpg" alt="" /></a>
+                    <img src="../../assets/img/ow1.jpg" data-thumb="../../assets/img/ow1.jpg" alt="" />
+                    <img src="../../assets/img/ow2.jpg" data-thumb="../../assets/img/ow2.jpg" alt="" />
+                    <img src="../../assets/img/ow3.jpg" data-thumb="../../assets/img/ow3.jpg" alt="" />
+                    <img src="../../assets/img/ow4.jpg" data-thumb="../../assets/img/ow4.jpg" alt="" />
+                    <a href="../../assets/img/ow5.jpg"><img src="../../assets/img/ow5.jpg" alt="" /></a>
+                    <img src="../../assets/img/ow4.jpg" data-thumb="../../assets/img/ow4.jpg" alt="" />
+                    <img src="../../assets/img/ow5.jpg" data-thumb="../../assets/img/ow5.jpg" alt="" />
+                    <a href="../../assets/img/ow8.jpg"><img src="../../assets/img/ow8.jpg" alt="" /></a>
+                    <img src="../../assets/img/ow7.jpg" data-thumb="../../assets/img/ow7.jpg" alt="" />
+                    <a href="../../assets/img/ow9.jpg"><img src="../../assets/img/ow9.jpg" alt="" /></a>
+                    <img src="../../assets/img/ow6.jpg" data-thumb="../../assets/img/ow6.jpg" alt="" />
+                    <img src="../../assets/img/ow7.jpg" data-thumb="../../assets/img/ow7.jpg" alt="" />
+                    <img src="../../assets/img/ow8.jpg" data-thumb="../../assets/img/ow8.jpg" alt="" />
+                    <a href="../../assets/img/ow6.jpg"><img src="../../assets/img/ow6.jpg" alt="" /></a>
+                    <img src="../../assets/img/ow9.jpg" data-thumb="../../assets/img/ow9.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End banner img-->
+<div class="container-fluid main-container" id="main-container">
+    <div class="row top-title">
+        <div class="col-md-12">
+            <h1 class="page-title right">
+                <a href="../../blog.html">博客</a> >> <a href="page14.html">爱的协奏曲</a>
+            </h1>
+        </div>
+    
+    <div class="row">
+        <div class="col-md-12 post-container">
+        <h4 style="text-align:center; background-color:#FFD2D3; font-family: tahoma; margin: 10px 5px 10px;">
+         <p style="background-color:#FFD2D3; text-align:left;">运动会结束了，我们班总成绩第四，还算可以，刘珂她班第六，在这次活动中我有了一个收获那就是我发现我跑的还是挺快的，可能是和小时候总出去上树爬墙有关系，锻炼了一身好肌肉，呵呵！还有一个意外的收获就是发现多了一个喜欢刘珂的人，无辜的多了一个情敌！</p>
+         <p style="background-color:#FFD2D3; text-align:left;">放松了头脑劳累了筋骨之后我们又回到了忙碌的学习中来，我似乎已经习惯了和适应了这种气氛，所以开始得心应手。刘珂也恢复正常，成绩遥遥领先，我可望不可及，高一的第二次期末考试她以全班第一全年组第三的名次再次成为我的偶像，我不得不佩服她真的比我聪明！同时又迎来的夏季！</p>
+         <p style="background-color:#FFD2D3; text-align:left;">“我讨厌夏天！”“我也是！”“你为什么讨厌？”“你为什么讨厌？”“我怕晒黑！”“我怕你以这个为借口在家折磨我！”“哈哈哈哈！”……</p>
+         <p style="background-color:#FFD2D3; text-align:left;">“哥！”“干吗？”“你以后想考哪个大学？”“不知道，没想好呢！你呢？”“你去哪儿我去哪儿！”“我就知道！”……</p>
+         <p style="background-color:#FFD2D3; text-align:left;">“刘可！”“干吗？”“你头发长了，我帮你剪吧！不收你钱！”“你倒找我钱我也不会让你剪的！”“就一次！”“我还想见人呢！”“你不相信我？”“你说呢？”“站住，别跑！”……</p>
+         <p style="background-color:#FFD2D3; text-align:left;">“你帮我擦钢琴吧？”“那你呢？”“看着你擦啊！”“这是给谁买的钢琴啊？”“我啊！”“那为什么我擦？”“我教你弹你给我学费了吗？”“……”“这不得了！”……</p>
+         <p style="background-color:#FFD2D3; text-align:left;">“把你的漫画借给我看看吧！”“不要！你总把书里弄的到处是薯片的碎渣！”“我保证这次不会了！”“那你用什么保证！”“用我哥哥的人头！行了吧？哈哈哈哈”……</p>
+         <p style="background-color:#FFD2D3; text-align:left;">“我墙上那张画呢？”“哦！被我包书皮了！”“啊？那是我画了三天的画啊！”“对啊！我知道！”“那你还……”“这样才证明了它的价值嘛……挂在你的房间里谁能看见？”……</p>
+         <p style="background-color:#FFD2D3; text-align:left;">“你看我干嘛？”“你猜我在想什么？”……“站住！去哪？”“我是不会给你按摩的！”……</p>
+         <p style="background-color:#FFD2D3; text-align:left;">“你有时觉不觉得有点不公平？”“哪方面？”“比如为什么我吃的永远是盘子里绿色的植物？”“因为你缺乏维生素嘛！”“那你不觉得我也应该适当的吃一点肉吗？”“那怎么行？吃肉这么辛苦的事情就让妹妹我代劳吧！”……！！</p>
+         <p style="background-color:#FFD2D3; text-align:left;">“哥！”“你又想干吗？”“我给你画张画像吧？”“你？算了！你知道怎么下笔吗？”“有什么啊？你会的我也会！”“那你画吧，我看书！”……“别动！”“我伸个懒腰也不行啊？”“不行！对艺术要有耐心！”……“画好了！”“可算好了，我看看！……你觉得你哥和猪八戒长的很像吗？”“恩……哈哈哈哈！”……</p>
+         <p style="background-color:#FFD2D3; text-align:left;">“明天就开学了，讨厌，还没过够呢！”“明天就开学了，太好了，终于解放了！”……</p>
+         <p style="background-color:#FFD2D3; text-align:left;">高二要分文理，我选择了喜欢的文科，妹妹精明的头脑理所当然的选择了理科，妈妈说：“当初一定是你们俩投错胎了，刘可应该是女儿，刘珂应该是儿子！”“那我是儿子，您还喜欢我吗？”“喜欢啊！”“那我是女儿您会喜欢我吗？”“不喜欢！因为有我！哈哈哈哈哈哈！”所以不管怎么投胎都是我没她招人喜欢！</p>
+         <p style="background-color:#FFD2D3; text-align:left;">再一次来到一个新班级，学文的大部分都是女生，有两个文科班,加在一起才有不到三十个男生，呵呵，我们男生成了“花心”！我发现那个任晓也学了文，而且又和我分到一个班，开学第一天我们从原来的班级拿着书包来到新班级的时候在门口遇上，她对我笑了一下，我也笑了一下表示友好！</p>
+                         <div class="page-icon">
+	<a class="page-pre" href="page13.html"><i></i>上一页</a>
+    <a href="page13.html">13</a>
+    <span class="page-current">14</span>
+     <a href="page15.html">15</a>
+    ……
+    <a href="page34.html">34</a>
+    <a class="page-next" href="page15.html">下一页<i></i></a>
+</div>
+
+                          <div class="audio-wrapper"  style="text-align:center; background-color:#FFD2D3;">
+     
+                          <audio size="#9.97MB" duration="#03:47" filename="爱的协奏曲.mp3">
+            
+                           <source src="../music/Love.mp3" type="audio/mp3">
+        
+                           </audio>
+        
+                           <div class="audio-left">
+            
+                           <img id="audioPlayer" src="../img/play.png">
+</div>
+        
+                           <div class="audio-right">
+            
+                           <p style="max-width: 536px;">爱的协奏曲.mp3</p>
+            
+                            <div class="progress-bar-bg" id="progressBarBg">
+                
+                            <span id="progressDot"></span>
+                
+                            <div class="progress-bar" id="progressBar">
+                            </div>
+            
+                            </div>
+            
+                            <div class="audio-time">
+               
+                           <span class="audio-length-current" id="audioCurTime">00:00</span>
+                
+                           <span class="audio-length-total">03:47</span>
+            
+                           </div>
+        
+                          </div>
+    
+                            </div>
+
+                       </div>
+                     <div class="post-content">
+ <hr/>
+                    </section>
+                <div class="meta-box">
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="GalMenu GalDropDown">
+	  <div class="circle" id="gal">
+		<div class="ring">
+		  <a href="../list/resources.html" title="" class="menuItem">资源</a>
+		  <a href="../list/technology.html" title="" class="menuItem">技术</a>
+		  <a href="../list/video.html" title="" class="menuItem">视频</a>
+		  <a href="../list/other.html" title="" class="menuItem">其他</a>
+		  <a href="#" title="" onclick="alert('此版块尚未激活！！！')" class="menuItem">未知</a>
+		  <a href="../../index.html" title="" class="menuItem">返回</a></div>
+		<audio id="audio" src="../music/niconiconi.mp3"></audio>
+	  </div>
+</div>
+<div id="overlay" style="opacity: 1; cursor: pointer;"></div>
+<script type="text/javascript">var items = document.querySelectorAll('.menuItem');
+  for (var i = 0,
+  l = items.length; i < l; i++) {
+	items[i].style.left = (50 - 35 * Math.cos( - 0.5 * Math.PI - 2 * (1 / l) * i * Math.PI)).toFixed(4) + "%";
+	items[i].style.top = (50 + 35 * Math.sin( - 0.5 * Math.PI - 2 * (1 / l) * i * Math.PI)).toFixed(4) + "%"
+  }</script>
+
+
+<script type="text/javascript" src="../../assets/js/GalMenu.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+	$('body').GalMenu({
+	  'menu': 'GalDropDown'
+	})
+  });
+</script>
+    <footer>
+        <!--版权信息-->
+        <div class="copyright">
+               欢迎来到 <a href="http://192.168.43.237/" target="_blank">龙之源</a>&nbsp;&nbsp;
+            <a href="http://192.168.43.237/">
+            </a>
+        </div>
+    </footer>
+</div>
+<script>
+        /*banner 初始化*/
+        $(window).load(function() {
+         $('#slider').nivoSlider({
+            effect: 'random',        // 过渡效果
+            controlNav: false,       // 是否显示图片导航控制按钮（,2,3... ）
+            pauseOnHover: true,      // 鼠标县浮时是否停止动画
+            manualAdvance: false,    // 是否手动切换 
+            animSpeed: 100,          // 图片过渡时间   
+            pauseTime: 2000,         // 图片显示时间
+            pauseOnHover: false,
+            manualAdvance: false,
+        });
+        });
+    $(document).ready(function(){
+        $('body').show();
+        $('.version').text(NProgress.version);
+        NProgress.start();
+        setTimeout(function() { NProgress.done(); $('.fade').removeClass('out'); }, 1000);
+    })         
+      
+  </script>
+</html>

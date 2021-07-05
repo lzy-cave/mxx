@@ -1,0 +1,274 @@
+ <!DOCTYPE html>
+<html lang="cn" dir="ltr" class="no-js">
+<head>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="maximum-scale=1.0,width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>龙之源 </title>
+    <link rel="icon" type="image/x-ico" href="../../assets/img/favicon.ico" />
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../assets/css/style.css" rel="stylesheet" />
+    <link href="../../assets/css/nprogress.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/css/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../../assets/css/default.css" type="text/css" media="screen" />
+    <script src="../../assets/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="../../assets/APlayer/dist/APlayer.min.css">
+    <script src="../../assets/js/jquery.nivo.slider.pack.js"></script>
+    <script src="../../assets/js/nprogress.js"></script>
+     <link href="../../assets/css/audio.css" rel="stylesheet" type="text/css" />
+     <link href="../../assets/css/page.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/texiao.js"></script>
+    <link rel="stylesheet" href="../../assets/css/GalMenu.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/live2d/css/fla.css"/> 
+    <link rel="stylesheet" type="text/css" href="../../assets/live2d/css/waifu.css"/>
+<div>
+<div class="waifu" id="waifu">
+		<div class="waifu-tips" style="opacity: 1;"></div>
+		<canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+               <div class="waifu-tool">
+            <span class="fui-home"></span>
+            <span class="fui-chat"></span>
+            <span class="fui-eye"></span>
+            <span class="fui-user"></span>
+            <span class="fui-photo"></span>
+            <span class="fui-info-circle"></span>
+            <span class="fui-cross"></span>
+        </div>
+</div>
+<script src="../../assets/live2d/js/live2d.js"></script>
+<script src="../../assets/live2d/js/waifu-tips.js"></script>
+<script type="text/javascript">initModel()</script>
+</div> 
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">
+              Toggle navigation
+            </span>
+            <span class="icon-bar">
+            </span>
+            <span class="icon-bar">
+            </span>
+            <span class="icon-bar">
+            </span>
+            </button>
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../../assets/img/logo.png" class="logo"/>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav header-menu">
+                <li>
+                    <a href="../../index.html">
+                        首页
+                    </a>
+                </li>
+                <li>
+                    <a href="../../about.html">
+                        关于
+                    </a>
+                </li>
+                <li>
+                    <a href="../../blog.html">
+                        博客
+                    </a>
+                </li>
+                <li>
+                    <a href="../../works.html">
+                        作品
+                    </a>
+                </li>
+                <li>
+                    <a href="../../links.html">
+                        链接
+                    </a>
+                </li>
+                <li>
+                    <a href="../../contact.html">
+                        联系
+                    </a>
+                </li>
+                <li>
+                    <a href="../../help.html">
+                        帮助
+                    </a>
+                </li> 
+            </ul>
+        </div>
+    </div>
+</nav>
+</div>
+<!--Start banner img-->
+<div class="container-filed" id="banner_container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="slider-wrapper theme-default">
+                <div id="slider" class="nivoSlider">
+                    <img src="../../assets/img/ow1.jpg" data-thumb="../../assets/img/ow1.jpg" alt="" />
+                    <img src="../../assets/img/ow2.jpg" data-thumb="../../assets/img/ow2.jpg" alt="" />
+                    <a href="../../assets/img/ow3.jpg"><img src="../../assets/img/ow3.jpg" alt="" /></a>
+                    <img src="../../assets/img/ow1.jpg" data-thumb="../../assets/img/ow1.jpg" alt="" />
+                    <img src="../../assets/img/ow2.jpg" data-thumb="../../assets/img/ow2.jpg" alt="" />
+                    <img src="../../assets/img/ow3.jpg" data-thumb="../../assets/img/ow3.jpg" alt="" />
+                    <img src="../../assets/img/ow4.jpg" data-thumb="../../assets/img/ow4.jpg" alt="" />
+                    <a href="../../assets/img/ow5.jpg"><img src="../../assets/img/ow5.jpg" alt="" /></a>
+                    <img src="../../assets/img/ow4.jpg" data-thumb="../../assets/img/ow4.jpg" alt="" />
+                    <img src="../../assets/img/ow5.jpg" data-thumb="../../assets/img/ow5.jpg" alt="" />
+                    <a href="../../assets/img/ow8.jpg"><img src="../../assets/img/ow8.jpg" alt="" /></a>
+                    <img src="../../assets/img/ow7.jpg" data-thumb="../../assets/img/ow7.jpg" alt="" />
+                    <a href="../../assets/img/ow9.jpg"><img src="../../assets/img/ow9.jpg" alt="" /></a>
+                    <img src="../../assets/img/ow6.jpg" data-thumb="../../assets/img/ow6.jpg" alt="" />
+                    <img src="../../assets/img/ow7.jpg" data-thumb="../../assets/img/ow7.jpg" alt="" />
+                    <img src="../../assets/img/ow8.jpg" data-thumb="../../assets/img/ow8.jpg" alt="" />
+                    <a href="../../assets/img/ow6.jpg"><img src="../../assets/img/ow6.jpg" alt="" /></a>
+                    <img src="../../assets/img/ow9.jpg" data-thumb="../../assets/img/ow9.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End banner img-->
+<div class="container-fluid main-container" id="main-container">
+    <div class="row top-title">
+        <div class="col-md-12">
+            <h1 class="page-title right">
+                <a href="../../blog.html">博客</a> >> <a href="page10.html">爱的协奏曲</a>
+            </h1>
+        </div>
+    
+    <div class="row">
+        <div class="col-md-12 post-container">
+        <h4 style="text-align:center; background-color:#FFD2D3; font-family: tahoma; margin: 10px 5px 10px;">
+         <p style="background-color:#FFD2D3; text-align:left;">“还好，你还没忘干净！”“嘿嘿！还凑合吧！刚才弹的是贝多芬的什么来着？”“是舒曼的！”“哦！是梦幻曲！”“是浪漫曲啦！”“嘿嘿！差不多啦！”“光会弹就是不记名字！和小时候一样！”“我们家有一个钢琴家就行了！我是跟着你偷学的嘛！”爸妈到现在为止还不知道我也会弹琴，我又想起了小时候，她学完之后就会教我，爸妈都工作忙，我们俩小的时候经常自己在家，有时间她就教我弹琴，所以我也学了些皮毛，我们那时和现在一样，坐在一个凳子上，她弹高音区我弹低音区，我总喜欢给她捣乱，时不时的发出一个低音吓她一跳！“刘可！”“恩？”“你以后还会像现在这样陪着我吗？”“当然！你是我唯一的妹妹嘛！”“可是你会找女朋友，会结婚！”“傻瓜，你也会有男朋友，也会结婚啊！”“我肯定嫁不出去！”“怎么会呢？小珂那么漂亮。”“那你有了女朋友还会陪我吗？”“会！我带你们一起出去玩！”……她不说话了，靠在我的肩膀上出神，我在琴键上继续演奏，最经典的《给艾丽丝》……</p>
+         <p style="background-color:#FFD2D3; text-align:left;">上高中了，第一件事是分班然后军训，我和她这次没有分到一个班级，我在三班她在一班，新班级里有三分之二的老同学，也有三分之一外校考入的新同学，没有妹妹在身边像一个小管家婆一样的看着我，我觉得这种感觉就像一九四九年——解放了！军训的第一天我们班就有一个小女生因为中暑昏倒了，是我把她背进的医务室，她是我在新同学里认识的第一个——任晓。</p>
+         <p style="background-color:#FFD2D3; text-align:left;">“听说你今天英雄救美啦？”回到家里刘珂问我，“就是出于人道主义援助！”“是吗？是看人家小女孩漂亮才救的吧？”“我有那么好色吗？”“这就不知道了！”“你怎么知道的？貌似我们俩班不在一起训练吧？”“我有耳目在你身边！哈！怕了吧？别忘了，我们在学校的身份那可是情侣关系哦！你这么明目张胆的红杏出墙能没有人告诉我吗？”“天啊！”……她在那得意的笑，我只好认命。</p>
+         <p style="background-color:#FFD2D3; text-align:left;">军训之后我们就开始了与世隔绝的痛苦学习进程，高中没有初中那么轻松，第一次期中考试全班六十个人，我考了四十五名，已经进入倒数的行列，这是我没有想到的，以前就是再不用功也不会考的这么惨，这使我的自尊心大受打击，可能是年纪大了对名次这种事情有了重视，成绩于我不再像浮云，我不能和以前一样抄抄作业，考试前突击一下就可以糊弄过关了，我得好好学习了！到了高中所有的课程都好像突然加深了，完全和初中学的知识脱节一样，我必须上课认真听讲，晚自习还得复习做题巩固。我第一次尝到了学习的辛苦，每天精神都很紧张，晚上回到家里也懒得说话，吃了饭就上楼看书然后睡觉。我和刘珂也只能在吃晚饭的时候见上一面说一两句话，大部分时间我们是各忙各的，上学和放学也碰不到一起了，我们的距离渐渐疏远！</p>
+         <p style="background-color:#FFD2D3; text-align:left;">努力是有成果的，在高一上学期的期末考试，我的成绩大踏步前进，进入前十！可是发成绩单那天我看见刘珂的成绩却是前所未有的低到历史最低点，她竟然出了前十名，而且才考了她班第三十。</p>
+                         <div class="page-icon">
+	<a class="page-pre" href="page9.html"><i></i>上一页</a>
+    <a href="page9.html">9</a>
+    <span class="page-current">10</span>
+     <a href="page11.html">11</a>
+    ……
+    <a href="page34.html">34</a>
+    <a class="page-next" href="page11.html">下一页<i></i></a>
+</div>
+
+                          <div class="audio-wrapper"  style="text-align:center; background-color:#FFD2D3;">
+     
+                          <audio size="#9.97MB" duration="#03:47" filename="爱的协奏曲.mp3">
+            
+                           <source src="../music/Love.mp3" type="audio/mp3">
+        
+                           </audio>
+        
+                           <div class="audio-left">
+            
+                           <img id="audioPlayer" src="../img/play.png">
+</div>
+        
+                           <div class="audio-right">
+            
+                           <p style="max-width: 536px;">爱的协奏曲.mp3</p>
+            
+                            <div class="progress-bar-bg" id="progressBarBg">
+                
+                            <span id="progressDot"></span>
+                
+                            <div class="progress-bar" id="progressBar">
+                            </div>
+            
+                            </div>
+            
+                            <div class="audio-time">
+               
+                           <span class="audio-length-current" id="audioCurTime">00:00</span>
+                
+                           <span class="audio-length-total">03:47</span>
+            
+                           </div>
+        
+                          </div>
+    
+                            </div>
+
+                       </div>
+                     <div class="post-content">
+ <hr/>
+                    </section>
+                <div class="meta-box">
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="GalMenu GalDropDown">
+	  <div class="circle" id="gal">
+		<div class="ring">
+		  <a href="../list/resources.html" title="" class="menuItem">资源</a>
+		  <a href="../list/technology.html" title="" class="menuItem">技术</a>
+		  <a href="../list/video.html" title="" class="menuItem">视频</a>
+		  <a href="../list/other.html" title="" class="menuItem">其他</a>
+		  <a href="#" title="" onclick="alert('此版块尚未激活！！！')" class="menuItem">未知</a>
+		  <a href="../../index.html" title="" class="menuItem">返回</a></div>
+		<audio id="audio" src="../music/niconiconi.mp3"></audio>
+	  </div>
+</div>
+<div id="overlay" style="opacity: 1; cursor: pointer;"></div>
+<script type="text/javascript">var items = document.querySelectorAll('.menuItem');
+  for (var i = 0,
+  l = items.length; i < l; i++) {
+	items[i].style.left = (50 - 35 * Math.cos( - 0.5 * Math.PI - 2 * (1 / l) * i * Math.PI)).toFixed(4) + "%";
+	items[i].style.top = (50 + 35 * Math.sin( - 0.5 * Math.PI - 2 * (1 / l) * i * Math.PI)).toFixed(4) + "%"
+  }</script>
+
+
+<script type="text/javascript" src="../../assets/js/GalMenu.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+	$('body').GalMenu({
+	  'menu': 'GalDropDown'
+	})
+  });
+</script>
+    <footer>
+        <!--版权信息-->
+        <div class="copyright">
+               欢迎来到 <a href="http://192.168.43.237/" target="_blank">龙之源</a>&nbsp;&nbsp;
+            <a href="http://192.168.43.237/">
+            </a>
+        </div>
+    </footer>
+</div>
+<script>
+        /*banner 初始化*/
+        $(window).load(function() {
+         $('#slider').nivoSlider({
+            effect: 'random',        // 过渡效果
+            controlNav: false,       // 是否显示图片导航控制按钮（,2,3... ）
+            pauseOnHover: true,      // 鼠标县浮时是否停止动画
+            manualAdvance: false,    // 是否手动切换 
+            animSpeed: 100,          // 图片过渡时间   
+            pauseTime: 2000,         // 图片显示时间
+            pauseOnHover: false,
+            manualAdvance: false,
+        });
+        });
+    $(document).ready(function(){
+        $('body').show();
+        $('.version').text(NProgress.version);
+        NProgress.start();
+        setTimeout(function() { NProgress.done(); $('.fade').removeClass('out'); }, 1000);
+    })         
+      
+  </script>
+</html>

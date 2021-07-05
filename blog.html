@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="cn" dir="ltr" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="maximum-scale=1.0,width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>龙之源 </title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link title="style2" href="assets/css/style.css" rel="stylesheet"/>
+    <link href="assets/css/nprogress.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="assets/css/default.css" type="text/css" media="screen" />
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.nivo.slider.pack.js"></script>
+    <script src="assets/js/nprogress.js"></script>
+    <script src="assets/js/texiao.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/page.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/live2d/css/waifu.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/live2d/css/fla.css"/> 
+     <link rel="stylesheet" href="assets/css/GalMenu.css" />
+<div>
+<div class="waifu" id="waifu">
+		<div class="waifu-tips" style="opacity: 1;"></div>
+		<canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+               <div class="waifu-tool">
+            <span class="fui-home"></span>
+            <span class="fui-chat"></span>
+            <span class="fui-eye"></span>
+            <span class="fui-user"></span>
+            <span class="fui-photo"></span>
+            <span class="fui-info-circle"></span>
+            <span class="fui-cross"></span>
+        </div>
+</div>
+<script src="assets/live2d/js/live2d.js"></script>
+<script src="assets/live2d/js/waifu-tips.js"></script>
+<script type="text/javascript">initModel()</script>
+</div>
+<style type="text/css">
+        #box{
+		text-align:right;
+                vertical-align:middel;
+		font-family: 'Microsoft YaHei';
+		font-size: 12px;
+	}
+        input{
+		width: 160px;
+		border: 1px solid #e2e2e2;
+		height: 27px;
+                text-align: left;
+		background-image: url(user/img/search.ico);
+		background-repeat: no-repeat;
+		background-size: 16px;
+		background-position:5px center;
+                border-radius: 3px;
+		padding:0 0 0 25px;
+	}
+	#search{
+		width: 58px;
+		height: 27px;
+		float: right;
+		background: #87CEEB;
+		color: white;
+		text-align: center;
+		line-height: 28px;
+                border-radius: 2px;
+		cursor: pointer;
+	}
+</style>
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">
+              Toggle navigation
+            </span>
+            <span class="icon-bar">
+            </span>
+            <span class="icon-bar">
+            </span>
+            <span class="icon-bar">
+            </span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.png" class="logo"/>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav header-menu">
+                <li>
+                    <a href="index.html">
+                        首页
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        关于
+                    </a>
+                </li>
+                <li>
+                    <a href="blog.html">
+                        博客
+                    </a>
+                </li>
+                <li>
+                    <a href="works.html">
+                        作品
+                    </a>
+                </li>
+                <li>
+                    <a href="links.html">
+                        链接
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        联系
+                    </a>
+                </li>
+                <li>
+                    <a href="help.html">
+                        帮助
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</div>
+<!--Start banner img-->
+<div class="container-filed" id="banner_container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="slider-wrapper theme-default">
+                <div id="slider" class="nivoSlider">
+                     <img src="assets/img/ow1.jpg" data-thumb="assets/img/ow1.jpg" alt="" />
+                    <img src="assets/img/ow2.jpg" data-thumb="assets/img/ow2.jpg" alt="" />
+                    <a href="assets/img/ow3.jpg"><img src="assets/img/ow3.jpg" alt="" /></a>
+                    <img src="assets/img/ow1.jpg" data-thumb="assets/img/ow1.jpg" alt="" />
+                    <img src="assets/img/ow2.jpg" data-thumb="assets/img/ow2.jpg" alt="" />
+                    <img src="assets/img/ow3.jpg" data-thumb="assets/img/ow3.jpg" alt="" />
+                    <img src="assets/img/ow4.jpg" data-thumb="assets/img/ow4.jpg" alt="" />
+                    <a href="assets/img/ow5.jpg"><img src="assets/img/ow5.jpg" alt="" /></a>
+                    <img src="assets/img/ow4.jpg" data-thumb="assets/img/ow4.jpg" alt="" />
+                    <img src="assets/img/ow5.jpg" data-thumb="assets/img/ow5.jpg" alt="" />
+                    <a href="assets/img/ow8.jpg"><img src="assets/img/ow8.jpg" alt="" /></a>
+                    <img src="assets/img/ow7.jpg" data-thumb="assets/img/ow7.jpg" alt="" />
+                    <a href="assets/img/ow9.jpg"><img src="assets/img/ow9.jpg" alt="" /></a>
+                    <img src="assets/img/ow6.jpg" data-thumb="assets/img/ow6.jpg" alt="" />
+                    <img src="assets/img/ow7.jpg" data-thumb="assets/img/ow7.jpg" alt="" />
+                    <img src="assets/img/ow8.jpg" data-thumb="assets/img/ow8.jpg" alt="" />
+                    <a href="assets/img/ow6.jpg"><img src="assets/img/ow6.jpg" alt="" /></a>
+                    <img src="assets/img/ow9.jpg" data-thumb="assets/img/ow9.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End banner img-->
+<div class="container-fluid main-container" id="main-container">
+    <div class="row">
+        <div class="col-md-12 top-title">
+
+<div id="box">
+<input type="text" placeholder="请输入关键词" onkeyup="filter(this.value);" font-family: 'Microsoft YaHei'; font-size: 60%; /><div id="search">搜索</div>	
+</div>
+            <h2 class="page-title">
+                博客文章
+            </h2>
+        </div>
+    </div>
+<div class="list" id="divMain">
+        <ul id="content1">
+            <li class="data"><div class="row">
+        <div class="col-md-12 post-container">
+            <h2 class="post-title">
+               <a href="user/essay/qixi.html" title="">七夕表白网页</a>
+              </a>
+            </h2>
+            <div class="meta-box">
+            <span class="m-post-date">
+              <i class="fa fa-calendar-o">
+              </i>
+              2020年8月26日
+            </span>
+            <span class="comments-link">
+                  <i class="fa fa-comments-o">
+                  </i>
+                 <a href="Board.html">
+                  <a href="#" onclick="alert('对不起，此项功能博主尚未开发！！！')">留言
+              </a>
+            </span>
+            </div>
+            <div class="post-content">
+                <p>
+                    这是一个表白网页
+                    </a>
+                </p>
+            </div>
+            <div class="meta-box">
+            <span class="cat-links">
+              <i class="fa fa-navicon">
+              </i>
+              <b>
+                  分类:
+              </b>
+                  文章
+              </a>
+            </span>
+            <span class="tag-links">
+              <i class="fa fa-tags">
+              </i>
+              <b>
+                  标签:
+              </b>
+                  其他
+              </a>
+            </span>
+            </div>
+        </div>
+    </div></li>
+            <li class="data"><div class="row">
+        <div class="col-md-12 post-container">
+            <h2 class="post-title">
+                <a href="user/content/VideoTools.html" title="">VideoTools</a>
+            </h2>
+            <div class="meta-box">
+            <span class="m-post-date">
+              <i class="fa fa-calendar-o">
+              </i>
+              2020年7月23日
+            </span>
+            <span class="comments-link">
+                  <i class="fa fa-comments-o">
+                  </i>
+                 <a href="#" onclick="alert('对不起，此项功能博主尚未开发！！！')">留言
+              </a>
+            </span>
+            </div>
+            <div class="post-content">
+                <p>
+                    VideoTools是一款非常强大的，可以搜到网上绝大部分的电影视频的软件。
+                    </a>
+                </p>
+            </div>
+            <div class="meta-box">
+            <span class="cat-links">
+              <i class="fa fa-navicon">
+              </i>
+              <b>
+                  分类:
+              </b>
+                  文章
+              </a>
+            </span>
+            <span class="tag-links">
+              <i class="fa fa-tags">
+              </i>
+              <b>
+                  标签:
+              </b>
+                  资源
+              </a>
+            </span>
+            </div>
+        </div>
+    </div></li>
+<li class="data"><div class="row">
+        <div class="col-md-12 post-container">
+            <h2 class="post-title">
+                <a href="user/essay/win8.1-1.html" title="">win8系统开机部署教程</a>
+            </h2>
+            <div class="meta-box">
+            <span class="m-post-date">
+              <i class="fa fa-calendar-o">
+              </i>
+              2020年7月23日
+            </span>
+            <span class="comments-link">
+                  <i class="fa fa-comments-o">
+                  </i>
+                 <a href="#" onclick="alert('对不起，此项功能博主尚未开发！！！')">留言
+              </a>
+            </span>
+            </div>
+            <div class="post-content">
+                <p>
+                    win8系统凭着开机启动快吸引了不少用户，然而对于一些人来说：它的开机速度没有那么神，问题可能出现在哪里呢?
+                    </a>
+                </p>
+            </div>
+            <div class="meta-box">
+            <span class="cat-links">
+              <i class="fa fa-navicon">
+              </i>
+              <b>
+                  分类:
+              </b>
+                  文章
+              </a>
+            </span>
+            <span class="tag-links">
+              <i class="fa fa-tags">
+              </i>
+              <b>
+                  标签:
+              </b>
+                  资源
+              </a>
+            </span>
+            </div>
+        </div>
+    </div></li>
+            <li class="data"><div class="row">
+        <div class="col-md-12 post-container">
+            <h2 class="post-title">
+                <a href="user/content/PandaOCR.html" title="">PandaOCR</a>
+            </h2>
+            <div class="meta-box">
+            <span class="m-post-date">
+              <i class="fa fa-calendar-o">
+              </i>
+              2020年7月18日
+            </span>
+            <span class="comments-link">
+                  <i class="fa fa-comments-o">
+                  </i>
+                 <a href="#" onclick="alert('对不起，此项功能博主尚未开发！！！')">留言
+              </a>
+            </span>
+            </div>
+            <div class="post-content">
+                <p>
+                    PandaOCR官方版是一款非常不错的图片转文字识别软件，下载完成解压后即可使用，使用起来也很方便。
+                    </a>
+                </p>
+            </div>
+            <div class="meta-box">
+            <span class="cat-links">
+              <i class="fa fa-navicon">
+              </i>
+              <b>
+                  分类:
+              </b>
+                  文章
+              </a>
+            </span>
+            <span class="tag-links">
+              <i class="fa fa-tags">
+              </i>
+              <b>
+                  标签:
+              </b>
+                  资源
+              </a>
+            </span>
+            </div>
+        </div>
+    </div></li>
+            <li class="data"><div class="row">
+        <div class="col-md-12 post-container">
+            <h2 class="post-title">
+                <a href="user/content/file.html" title="">办公文件</a>
+            </h2>
+            <div class="meta-box">
+            <span class="m-post-date">
+              <i class="fa fa-calendar-o">
+              </i>
+              2020年7月16日
+            </span>
+            <span class="comments-link">
+                  <i class="fa fa-comments-o">
+                  </i>
+                 <a href="#" onclick="alert('对不起，此项功能博主尚未开发！！！')">留言
+              </a>
+            </span>
+            </div>
+            <div class="post-content">
+                <p>
+                   这里是一些常用的办公文件
+                    </a>
+                </p>
+            </div>
+            <div class="meta-box">
+            <span class="cat-links">
+              <i class="fa fa-navicon">
+              </i>
+              <b>
+                  分类:
+              </b>
+                  文章
+              </a>
+            </span>
+            <span class="tag-links">
+              <i class="fa fa-tags">
+              </i>
+              <b>
+                  标签:
+              </b>
+                  资源
+              </a>
+            </span>
+            </div>
+        </div>
+    </div></li>
+          <li class="data"><div class="row">
+        <div class="col-md-12 post-container">
+            <h2 class="post-title">
+                <a href="./user/essay/share1.html" title="">网站推荐</a>
+            </h2>
+            <div class="meta-box">
+            <span class="m-post-date">
+              <i class="fa fa-calendar-o">
+              </i>
+              2020年7月8日
+            </span>
+            <span class="comments-link">
+                  <i class="fa fa-comments-o">
+                  </i>
+                 <a href="#" onclick="alert('对不起，此项功能博主尚未开发！！！')">留言
+              </a>
+            </span>
+            </div>
+            <div class="post-content">
+                <p>
+                    六个超有意思的网站，让你大大开眼界
+                </p>
+            </div>
+            <div class="meta-box">
+            <span class="cat-links">
+              <i class="fa fa-navicon">
+              </i>
+              <b>
+                  分类:
+              </b>
+                  文章
+              </a>
+            </span>
+            <span class="tag-links">
+              <i class="fa fa-tags">
+              </i>
+              <b>
+                  标签:
+              </b>
+                 资源
+              </a>
+            </span>
+            </div>
+        </div>
+    </div></li>
+            <li class="data"><div class="row">
+        <div class="col-md-12 post-container">
+            <h2 class="post-title">
+                <a href="user/content/pandown.html" title="">pandownload</a>
+            </h2>
+            <div class="meta-box">
+            <span class="m-post-date">
+              <i class="fa fa-calendar-o">
+              </i>
+              2020年7月3日
+            </span>
+            <span class="comments-link">
+                  <i class="fa fa-comments-o">
+                  </i>
+                 <a href="#" onclick="alert('对不起，此项功能博主尚未开发！！！')">留言
+              </a>
+            </span>
+            </div>
+            <div class="post-content">
+                <p>
+                   众所周知，pandownload是一款百度网盘下载不限速软件，它有着简洁的外观跟强大的功能，随着原作者进去了，它也就没有了更新，又要过着百度盘龟速下载的生活。可是最近pandownload终于又满血复活，向用户推出了v2.22最新版本
+                    </a>
+                </p>
+            </div>
+            <div class="meta-box">
+            <span class="cat-links">
+              <i class="fa fa-navicon">
+              </i>
+              <b>
+                  分类:
+              </b>
+                  文章
+              </a>
+            </span>
+            <span class="tag-links">
+              <i class="fa fa-tags">
+              </i>
+              <b>
+                  标签:
+              </b>
+                  资源
+              </a>
+            </span>
+            </div>
+        </div>
+    </div></li>
+            <li class="data"><div class="row">
+        <div class="col-md-12 post-container">
+            <h2 class="post-title">
+                <a href="user/essay/content.html" title="">免费虚拟主机</a>
+            </h2>
+            <div class="meta-box">
+            <span class="m-post-date">
+              <i class="fa fa-calendar-o">
+              </i>
+              2020年7月3日
+            </span>
+            <span class="comments-link">
+                  <i class="fa fa-comments-o">
+                  </i>
+                 <a href="#" onclick="alert('对不起，此项功能博主尚未开发！！！')">留言
+              </a>
+            </span>
+            </div>
+            <div class="post-content">
+                <p>
+                    免费的虚拟主机，搭建网站的绝佳选择！！！
+                    </a>
+                </p>
+            </div>
+            <div class="meta-box">
+            <span class="cat-links">
+              <i class="fa fa-navicon">
+              </i>
+              <b>
+                  分类:
+              </b>
+                  文章
+              </a>
+            </span>
+            <span class="tag-links">
+              <i class="fa fa-tags">
+              </i>
+              <b>
+                  标签:
+              </b>
+                  资源
+              </a>
+            </span>
+            </div>
+        </div>
+    </div></li>
+            <li class="data"><div class="row">
+        <div class="col-md-12 post-container">
+            <h2 class="post-title">
+               <a href="./user/content/VIP视频在线观看.html" title="">VIP视频解析</a>
+            </h2>
+            <div class="meta-box">
+            <span class="m-post-date">
+              <i class="fa fa-calendar-o">
+              </i>
+              2020年7月1日
+            </span>
+            <span class="comments-link">
+                  <i class="fa fa-comments-o">
+                  </i>
+                <a href="#" onclick="alert('对不起，此项功能博主尚未开发！！！')">留言
+              </a>
+            </span>
+            </div>
+            <div class="post-content">
+                <p>
+                    视频免费看，不用VIP中P
+                   <a href="./user/content/VIP视频在线观看.html">
+                        点这观看
+                    </a>
+                </p>
+            </div>
+            <div class="meta-box">
+            <span class="cat-links">
+              <i class="fa fa-navicon">
+              </i>
+              <b>
+                  分类:
+              </b>
+                  文章
+              </a>
+            </span>
+            <span class="tag-links">
+              <i class="fa fa-tags">
+              </i>
+              <b>
+                  标签:
+              </b>
+                  技术
+              </a>
+            </span>
+            </div>
+        </div>
+    </div></li>
+              <li class="data"><div class="row">
+        <div class="col-md-12 post-container">
+            <h2 class="post-title">
+                <a href="./user/content/QRCode.html" title="">二维码生成</a>
+            </h2>
+            <div class="meta-box">
+            <span class="m-post-date">
+              <i class="fa fa-calendar-o">
+              </i>
+              2020年6月29日
+            </span>
+            <span class="comments-link">
+                 <i class="fa fa-comments-o">
+                  </i>
+                <a href="#" onclick="alert('对不起，此项功能博主尚未开发！！！')">留言
+              </a>
+            </span>
+            </div>
+            <div class="post-content">
+                <p>
+                    通过本网页，你可以将你想说的话、你的网址生成二维码格式，快点试试吧。
+                </p>
+            </div>
+            <div class="meta-box">
+            <span class="cat-links">
+              <i class="fa fa-navicon">
+              </i>
+              <b>
+                  分类:
+              </b>
+                  文章
+              </a>
+            </span>
+            <span class="tag-links">
+              <i class="fa fa-tags">
+              </i>
+              <b>
+                  标签:
+              </b>
+                  技术
+              </a>
+            </span>
+            </div>
+        </div>
+    </div></li>
+              <li class="data"><div class="row">
+        <div class="col-md-12 post-container">
+            <h2 class="post-title">
+                <a href="./user/content/crosstalk.html" title="">精品相声集</a>
+            </h2>
+            <div class="meta-box">
+            <span class="m-post-date">
+              <i class="fa fa-calendar-o">
+              </i>
+              2020年6月29日
+            </span>
+            <span class="comments-link">
+                 <i class="fa fa-comments-o">
+                  </i>
+                <a href="#" onclick="alert('对不起，此项功能博主尚未开发！！！')">留言
+              </a>
+            </span>
+            </div>
+            <div class="post-content">
+                <p>
+                    精品相声集
+                </p>
+            </div>
+            <div class="meta-box">
+            <span class="cat-links">
+              <i class="fa fa-navicon">
+              </i>
+              <b>
+                  分类:
+              </b>
+                  文章
+              </a>
+            </span>
+            <span class="tag-links">
+              <i class="fa fa-tags">
+              </i>
+              <b>
+                  标签:
+              </b>
+                  娱乐
+              </a>
+            </span>
+            </div>
+        </div>
+    </div></li>
+              <li class="data"><div class="row">
+        <div class="col-md-12 post-container">
+            <h2 class="post-title">
+                <a href="./user/content/musiccut.html" title="">自制纯音乐集</a>
+            </h2>
+            <div class="meta-box">
+            <span class="m-post-date">
+              <i class="fa fa-calendar-o">
+              </i>
+              2020年6月29日
+            </span>
+            <span class="comments-link">
+                 <i class="fa fa-comments-o">
+                  </i>
+                <a href="#" onclick="alert('对不起，此项功能博主尚未开发！！！')">留言
+              </a>
+            </span>
+            </div>
+            <div class="post-content">
+                <p>
+                    自制纯音乐集
+                </p>
+            </div>
+            <div class="meta-box">
+            <span class="cat-links">
+              <i class="fa fa-navicon">
+              </i>
+              <b>
+                  分类:
+              </b>
+                  文章
+              </a>
+            </span>
+            <span class="tag-links">
+              <i class="fa fa-tags">
+              </i>
+              <b>
+                  标签:
+              </b>
+                  娱乐
+              </a>
+            </span>
+            </div>
+        </div>
+    </div></li>
+              <li class="data"><div class="row">
+        <div class="col-md-12 post-container">
+            <h2 class="post-title">
+                <a href="./user/content/FormatFactory.html" title="">格式工厂</a>
+            </h2>
+            <div class="meta-box">
+            <span class="m-post-date">
+              <i class="fa fa-calendar-o">
+              </i>
+              2020年6月29日
+            </span>
+            <span class="comments-link">
+                 <i class="fa fa-comments-o">
+                  </i>
+                <a href="#" onclick="alert('对不起，此项功能博主尚未开发！！！')">留言
+              </a>
+            </span>
+            </div>
+            <div class="post-content">
+                <p>
+                    FormatFactory是一款功能非常强大的多媒体格式转换软件，这里提供了免安装的4.3.0版本的FormatFactory。
+                </p>
+            </div>
+            <div class="meta-box">
+            <span class="cat-links">
+              <i class="fa fa-navicon">
+              </i>
+              <b>
+                  分类:
+              </b>
+                  文章
+              </a>
+            </span>
+            <span class="tag-links">
+              <i class="fa fa-tags">
+              </i>
+              <b>
+                  标签:
+              </b>
+                  资源
+              </a>
+            </span>
+            </div>
+        </div>
+    </div></li>
+               <li class="data"><div class="row">
+        <div class="col-md-12 post-container">
+            <h2 class="post-title">
+                <a href="./user/The Concerto of Love/page1.html" title="">爱的协奏曲</a>
+            </h2>
+            <div class="meta-box">
+            <span class="m-post-date">
+              <i class="fa fa-calendar-o">
+              </i>
+              2020年6月28日
+            </span>
+            <span class="comments-link">
+                 <i class="fa fa-comments-o">
+                  </i>
+                <a href="#" onclick="alert('对不起，此项功能博主尚未开发！！！')">留言
+              </a>
+            </span>
+            </div>
+            <div class="post-content">
+                <p>
+                    从在幼儿园两人穿同款的衣服，到小学开始手牵手回家，再到初高中两人的关系被周围的同学老师默认为情侣。天真可爱的刘珂早已在心里爱上了这个不该爱的哥哥，而刘可虽对这份感情没有明显认知，但其实也把妹妹放到心中非同一般兄妹关系的地位。两兄妹的欢笑、苦恼等点点滴滴就在成长的历程中铺撒，关系一再逼近暧昧而不敢再靠近，等到回过头之时已为时已晚
+                </p>
+            </div>
+            <div class="meta-box">
+            <span class="cat-links">
+              <i class="fa fa-navicon">
+              </i>
+              <b>
+                  分类:
+              </b>
+                  文章
+              </a>
+            </span>
+            <span class="tag-links">
+              <i class="fa fa-tags">
+              </i>
+              <b>
+                  标签:
+              </b>
+                  其他
+              </a>
+            </span>
+            </div>
+        </div>
+    </div></li>
+              <li class="data"><div class="row">
+        <div class="col-md-12 post-container">
+            <h2 class="post-title">
+                <a href="./user/content/三码合一.html" title="">三码合一</a>
+            </h2>
+            <div class="meta-box">
+            <span class="m-post-date">
+              <i class="fa fa-calendar-o">
+              </i>
+              2020年6月26日
+            </span>
+            <span class="comments-link">
+                 <i class="fa fa-comments-o">
+                  </i>
+                <a href="#" onclick="alert('对不起，此项功能博主尚未开发！！！')">留言
+              </a>
+            </span>
+            </div>
+            <div class="post-content">
+                <p>
+                    一码在手，支付不愁
+                    <a href="./user/content/三码合一.html">
+                </p>
+            </div>
+            <div class="meta-box">
+            <span class="cat-links">
+              <i class="fa fa-navicon">
+              </i>
+              <b>
+                  分类:
+              </b>
+                  文章
+              </a>
+            </span>
+            <span class="tag-links">
+              <i class="fa fa-tags">
+              </i>
+              <b>
+                  标签:
+              </b>
+                  技术
+              </a>
+            </span>
+            </div>
+        </div>
+    </div></li>
+            <li class="data"><div class="row">
+        <div class="col-md-12 post-container">
+            <h2 class="post-title">
+                <a href="./user/content/erzhounian.html" title="">二周年庆</a>
+            </h2>
+            <div class="meta-box">
+            <span class="m-post-date">
+              <i class="fa fa-calendar-o">
+              </i>
+              2020年6月26日
+            </span>
+            <span class="comments-link">
+                  <i class="fa fa-comments-o">
+                  </i>
+                <a href="#" onclick="alert('对不起，此项功能博主尚未开发！！！')">留言
+              </a>
+            </span>
+            </div>
+            <div class="post-content">
+                <p>
+                   不知不觉楚留香江湖已过两年之久，只能说节目组用心了
+                </p>
+            </div>
+            <div class="meta-box">
+            <span class="cat-links">
+              <i class="fa fa-navicon">
+              </i>
+              <b>
+                  分类:
+              </b>
+                  文章
+              </a>
+            </span>
+            <span class="tag-links">
+              <i class="fa fa-tags">
+              </i>
+              <b>
+                  标签:
+              </b>
+                  娱乐
+              </a>
+            </span>
+            </div>
+        </div>
+    </div></li>
+            <li class="data"><div class="row">
+        <div class="col-md-12 post-container">
+            <h2 class="post-title">
+                <a href="user/content/chuanqi.html" title="">楚留香传奇</a>
+            </h2>
+            <div class="meta-box">
+            <span class="m-post-date">
+              <i class="fa fa-calendar-o">
+              </i>
+              2020年6月3日
+            </span>
+            <span class="comments-link">
+                  <i class="fa fa-comments-o">
+                  </i>
+                 <a href="#" onclick="alert('对不起，此项功能博主尚未开发！！！')">留言
+              </a>
+            </span>
+            </div>
+            <div class="post-content">
+                <p>
+                    自两年前的争斗中被打下水后被楚留香救起，到两年后楚留香版权被收购，楚留香断剑谢幕
+                    </a>
+                </p>
+            </div>
+            <div class="meta-box">
+            <span class="cat-links">
+              <i class="fa fa-navicon">
+              </i>
+              <b>
+                  分类:
+              </b>
+                  文章
+              </a>
+            </span>
+            <span class="tag-links">
+              <i class="fa fa-tags">
+              </i>
+              <b>
+                  标签:
+              </b>
+                  娱乐
+              </a>
+            </span>
+            </div>
+        </div>
+    </div></li>
+            <li class="data"><div class="row">
+        <div class="col-md-12 post-container">
+            <h2 class="post-title">
+                <a href="./user/content/RoadRush.html" title="">暴力摩托</a>
+            </h2>
+            <div class="meta-box">
+            <span class="m-post-date">
+              <i class="fa fa-calendar-o">
+              </i>
+              2020年5月29日
+            </span>
+            <span class="comments-link">
+                 <i class="fa fa-comments-o">
+                  </i>
+                <a href="#" onclick="alert('对不起，此项功能博主尚未开发！！！')">留言
+              </a>
+            </span>
+            </div>
+            <div class="post-content">
+                <p>
+                    “RoadRush”是一款与众不同的竞速类游戏，承载了童年的回忆，在这里你可以尽情的放飞自我
+                </p>
+            </div>
+            <div class="meta-box">
+            <span class="cat-links">
+              <i class="fa fa-navicon">
+              </i>
+              <b>
+                  分类:
+              </b>
+                  文章
+              </a>
+            </span>
+            <span class="tag-links">
+              <i class="fa fa-tags">
+              </i>
+              <b>
+                  标签:
+              </b>
+                  资源
+              </a>
+            </span>
+            </div>
+        </div>
+    </div></li>
+            <li class="data"><div class="row">
+        <div class="col-md-12 post-container">
+            <h2 class="post-title">
+                <a href="./user/content/daoyi.html" title="">兄弟反目</a>
+            </h2>
+            <div class="meta-box">
+            <span class="m-post-date">
+              <i class="fa fa-calendar-o">
+              </i>
+              2020年5月26日
+            </span>
+            <span class="comments-link">
+                  <i class="fa fa-comments-o">
+                  </i>
+                 <a href="#" onclick="alert('对不起，此项功能博主尚未开发！！！')">留言
+              </a>
+            </span>
+            </div>
+            <div class="post-content">
+                <p>
+                    为了一个不知真假的破药生祭百千活人，你置兄弟们于何地？置我于何地？置道义于何地啊？
+                    </a>
+                </p>
+            </div>
+            <div class="meta-box">
+            <span class="cat-links">
+              <i class="fa fa-navicon">
+              </i>
+              <b>
+                  分类:
+              </b>
+                  文章
+              </a>
+            </span>
+            <span class="tag-links">
+              <i class="fa fa-tags">
+              </i>
+              <b>
+                  标签:
+              </b>
+                  娱乐
+              </a>
+            </span>
+            </div>
+        </div>
+    </div></li>
+            <li class="data"><div class="row">
+        <div class="col-md-12 post-container">
+            <h2 class="post-title">
+                <a href="user/content/tupian.html" title="">旋转图片</a>
+            </h2>
+            <div class="meta-box">
+            <span class="m-post-date">
+              <i class="fa fa-calendar-o">
+              </i>
+              2020年5月20日
+            </span>
+            <span class="comments-link">
+                  <i class="fa fa-comments-o">
+                  </i>
+                 <a href="#" onclick="alert('对不起，此项功能博主尚未开发！！！')">留言
+              </a>
+            </span>
+            </div>
+            <div class="post-content">
+                <p>
+                    不同的视觉，领略不同的美【1】
+                    </a>
+                </p>
+            </div>
+            <div class="meta-box">
+            <span class="cat-links">
+              <i class="fa fa-navicon">
+              </i>
+              <b>
+                  分类:
+              </b>
+                  文章
+              </a>
+            </span>
+            <span class="tag-links">
+              <i class="fa fa-tags">
+              </i>
+              <b>
+                  标签:
+              </b>
+                  资源
+              </a>
+            </span>
+            </div>
+        </div>
+    </div></li>
+        </ul>
+    </div>
+    <div class="page page1"></div>
+    <ol id="list">
+    </ol>
+    <div id="pageDiv"></div>
+    <!--分页进入第二页，一页多少可分配-->
+<script>
+    var datas = [], Filtered = [], page = 1, pagesize = 5, pageData = [];
+    //生成模拟数据
+    //for (var i = 0; i < 1000; i++) {
+    //    datas.push('data_' + i);
+    //}
+    var lis = document.getElementById('content1').getElementsByTagName('li');
+    for (var i = 0, n = lis.length; i < n; i++) {
+        datas.push(lis[i].innerHTML);
+    };
+    //过滤
+    function filter(q) {
+        Filtered = [];
+        if (q == '') {
+            Filtered = datas;
+        } else {
+            for (var i = 0, n = datas.length; i < n; i++) {
+                if (datas[i].toLowerCase().indexOf(q.toLowerCase()) > -1) {
+                    Filtered.push(datas[i]);
+                }
+            }
+        }
+        render();
+    }
+    //渲染数据
+    function render() {
+        document.getElementById('content1').innerHTML = getPageData();
+        setPageInfo();
+    }
+    //转到指定页
+    function goPage(n) {
+        page = n;
+        render();
+    }
+    //取得当前页数据
+    function getPageData() {
+        if ((page - 1) * pagesize > Filtered.length) {
+            page = Math.ceil(Filtered.length / pagesize);
+        }
+        var n = Math.min(pagesize, Filtered.length - (page - 1) * pagesize);
+        pageData = Filtered.slice((page - 1) * pagesize, n + (page - 1) * pagesize);
+        var html = [];
+        for (var i = 0, n = pageData.length; i < n; i++) {
+            html.push('<li>' + pageData[i] + '</li>');
+        }
+        return html.join("");
+    }
+    //设置分页条信息
+    function setPageInfo() {
+        var pageinfo = '';
+        var pageCount = Math.ceil(Filtered.length / pagesize);
+        if (pageCount <= 1) {
+            document.getElementById('pageDiv').innerHTML = '';
+            return;
+        }
+        if (page > 1) {
+            pageinfo += getpagelink(1, '首页');
+        }
+        if (page > 10) {
+            pageinfo += getpagelink(page - 10, '前10页');
+        }
+        for (var i = Math.max(1, page - 10) ; i < page; i++) {
+            pageinfo += getpagelink(i, i);
+        }
+        pageinfo += page + ' ';
+        for (var i = page + 1 ; i <= Math.min(10 + page, pageCount) ; i++) {
+            pageinfo += getpagelink(i, i);
+        }
+        if (page + 10 < pageCount) {
+            pageinfo += getpagelink(page + 10, '后10页');
+        }
+        if (page < pageCount) {
+            pageinfo += getpagelink(pageCount, '末页');
+        }
+        document.getElementById('pageDiv').innerHTML = pageinfo;
+    }
+    function getpagelink(page, text) {
+        return '<a href="javascript:void(0);" onclick="goPage(' + page + ');">' + text + '</a> '
+    }
+    Filtered = datas;
+    render();
+</script>
+   
+    <!--评论内容-->
+    <div class="row page-comments-container">
+        <div class="col-md-12">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+        </div>
+    </div>
+<div class="GalMenu GalDropDown">
+	  <div class="circle" id="gal">
+		<div class="ring">
+		  <a href="user/list/resources.html" title="" class="menuItem">资源</a>
+		  <a href="user/list/technology.html" title="" class="menuItem">技术</a>
+		  <a href="user/list/entertainment.html" title="" class="menuItem">娱乐</a>
+		  <a href="user/list/other.html" title="" class="menuItem">其他</a>
+		  <a href="#" title="" onclick="alert('此版块尚未激活！！！')" class="menuItem">未知</a>
+		  <a href="index.html" title="" class="menuItem">返回</a></div>
+		<audio id="audio" src="user/music/niconiconi.mp3"></audio>
+	  </div>
+</div>
+<div id="overlay" style="opacity: 1; cursor: pointer;"></div>
+<script type="text/javascript">var items = document.querySelectorAll('.menuItem');
+  for (var i = 0,
+  l = items.length; i < l; i++) {
+	items[i].style.left = (50 - 35 * Math.cos( - 0.5 * Math.PI - 2 * (1 / l) * i * Math.PI)).toFixed(4) + "%";
+	items[i].style.top = (50 + 35 * Math.sin( - 0.5 * Math.PI - 2 * (1 / l) * i * Math.PI)).toFixed(4) + "%"
+  }</script>
+
+
+<script type="text/javascript" src="assets/js/GalMenu.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+	$('body').GalMenu({
+	  'menu': 'GalDropDown'
+	})
+  });
+</script>
+    <footer>
+        <!--版权信息-->
+        <div class="copyright">
+            欢迎来到 <a href="http://longzhiyuan.tk/" target="_blank">龙之源</a>&nbsp;&nbsp;
+            <a href="http://longzhiyuan.tk/">
+            </a>
+        </div>
+    </footer>
+</div>
+<script src="assets/js/bootstrap.min.js"></script>
+<script>
+    /*banner 初始化*/
+    $(window).load(function(){
+      $('#slider').nivoSlider({
+        effect: 'random',        // 过渡效果
+        controlNav: false,       // 是否显示图片导航控制按钮（,2,3... ）
+        pauseOnHover: true,      // 鼠标县浮时是否停止动画
+        manualAdvance: false,    // 是否手动切换 
+        animSpeed: 100,          // 图片过渡时间   
+        pauseTime: 2000,         // 图片显示时间
+        pauseOnHover: false,
+        manualAdvance: false,
+      });
+    });
+    $(document).ready(function(){
+      $('body').show();
+      $('.version').text(NProgress.version);
+      NProgress.start();
+      setTimeout(function() { NProgress.done(); $('.fade').removeClass('out'); }, 1000);
+      var style2 = $(".style2")
+      style2.click(function(){
+        
+      })
+    })
+    
+</script>
+</body>
+
+</html>

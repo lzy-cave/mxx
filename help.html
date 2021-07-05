@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    
+<meta charset="UTF-8">
+    
+<title>Help</title>
+    
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    
+<link title="style2" href="assets/css/style.css" rel="stylesheet"/>
+ 
+<link rel="icon" type="image/x-ico" href="./assets/img/favicon.ico" />  
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/texiao.js"></script>
+
+ <link rel="stylesheet" type="text/css" href="assets/live2d/css/waifu.css"/>
+ <link rel="stylesheet" type="text/css" href="assets/live2d/css/fla.css"/> 
+ <link rel="stylesheet" href="assets/css/GalMenu.css" />
+<div>
+<div class="waifu" id="waifu">
+		<div class="waifu-tips" style="opacity: 1;"></div>
+		<canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+              <div class="waifu-tool">
+            <span class="fui-home"></span>
+            <span class="fui-chat"></span>
+            <span class="fui-eye"></span>
+            <span class="fui-user"></span>
+            <span class="fui-photo"></span>
+            <span class="fui-info-circle"></span>
+            <span class="fui-cross"></span>
+        </div>
+</div>
+<script src="assets/live2d/js/live2d.js"></script>
+<script src="assets/live2d/js/waifu-tips.js"></script>
+<script type="text/javascript">initModel()</script>
+</div>
+    <style>
+    .main-container{
+        background: #FFF;
+        margin:100px auto;
+    }
+    </style>
+</head>
+<body>
+<section>
+    <div class="container main-container">
+        <div class="row">
+            <div class="col-md-12" id="help">
+                <h1>帮助(Help)</h1>
+            </div>
+            <hr/>
+            <div class="col-md-12" id="help-container">
+                <li><a href="https://lzy-cave.github.io/lzy/">别点了，再点我也帮不了你</a></li>
+                 </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="GalMenu GalDropDown">
+	  <div class="circle" id="gal">
+		<div class="ring">
+		  <a href="user/list/resources.html" title="" class="menuItem">资源</a>
+		  <a href="user/list/technology.html" title="" class="menuItem">技术</a>
+		  <a href="user/list/entertainment.html" title="" class="menuItem">娱乐</a>
+		  <a href="user/list/other.html" title="" class="menuItem">其他</a>
+		  <a href="#" title="" onclick="alert('此版块尚未激活！！！')" class="menuItem">未知</a>
+		  <a href="index.html" title="" class="menuItem">返回</a></div>
+		<audio id="audio" src="user/music/niconiconi.mp3"></audio>
+	  </div>
+</div>
+<div id="overlay" style="opacity: 1; cursor: pointer;"></div>
+<script type="text/javascript">var items = document.querySelectorAll('.menuItem');
+  for (var i = 0,
+  l = items.length; i < l; i++) {
+	items[i].style.left = (50 - 35 * Math.cos( - 0.5 * Math.PI - 2 * (1 / l) * i * Math.PI)).toFixed(4) + "%";
+	items[i].style.top = (50 + 35 * Math.sin( - 0.5 * Math.PI - 2 * (1 / l) * i * Math.PI)).toFixed(4) + "%"
+  }</script>
+<script type="text/javascript" src="assets/js/GalMenu.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+	$('body').GalMenu({
+	  'menu': 'GalDropDown'
+	})
+  });
+</script>
+</body>
+
+</html>
