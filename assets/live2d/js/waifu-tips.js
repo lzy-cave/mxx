@@ -42,7 +42,7 @@ $(document).on("visibilitychange", function() {
 });*/
 
 $('.waifu-tool .fui-home').click(function (){
-    window.location.href="http://www.longzhiyuan.tk/index.html";
+    window.location.href="http://www.longzhiyuan.tk/";
 });
 
 $('.waifu-tool .fui-eye').click(function (){
@@ -59,7 +59,7 @@ $('.waifu-tool .fui-user').click(function (){
 });
 
 $('.waifu-tool .fui-info-circle').click(function (){
-    window.open('http://www.longzhiyuan.tk/blog.html');
+    window.open('http://www.longzhiyuan.tk/');
 });
 
 $('.waifu-tool .fui-cross').click(function (){
