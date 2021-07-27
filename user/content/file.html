@@ -43,10 +43,74 @@
 <script type="text/javascript">initModel()</script>
 </div> 
  <style>
-    table{
-          margin: 3px auto;
-         }
-    </style>
+    .tp-down-box{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .down-btn {
+      letter-spacing: 0.1em;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 45px;
+      width: 23%;
+      max-width: 160px;
+      text-decoration: none;
+      text-transform: uppercase;
+      margin: 5px;
+    }
+    .down-btn:hover {
+      text-decoration: none;
+    }
+    .tp-down-btn {
+      --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+      display: var(--uismLinkDisplay);
+      color: #000;
+      border: 2px solid #000;
+      border-radius: 5px;
+      position: relative;
+      transition-duration: 0.4s;
+      overflow: hidden;
+      text-align: center;
+    }
+    .tp-down-btn::before,
+    .tp-down-btn span{
+      color: #000;
+      margin: 0 auto;
+      transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+      transition-duration: 0.4s;
+    }
+    .tp-down-btn:hover{
+      background-color: #000;
+    }
+    .tp-down-btn:hover span{
+      -webkit-transform: translateY(-400%) scale(-0.1,20);
+      transform: translateY(-400%) scale(-0.1,20);
+    }
+    .tp-down-btn::before{
+      content: attr(data-sm-link-text);
+      color: #fff;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      -webkit-transform: translateY(500%) scale(-0.1,20);
+      transform: translateY(500%) scale(-0.1,20);
+    }
+    .tp-down-btn:hover::before{
+        letter-spacing: 0.05em;
+        -webkit-transform: translateY(0) scale(1,1);
+        transform: translateY(0) scale(1,1);
+    }
+    @media screen and (max-width: 1198px){
+      .down-btn{
+          width: 45%;
+      }
+    }
+</style>
 </head>
 
 <body>
@@ -167,51 +231,19 @@
                     <div class="main-container">
                         <div class="row">
                             <p>玻璃仪器校正模板，输入称量的数据即可自动得出结果，避免了繁琐的运算操作。</p>
-                            <table>
-                               <tbody>
-                                   <tr>
-                                      <td>
-                              <a href="https://lzy-cave.github.io/mxx/user/download/玻璃仪器校正模板.xls">
-                                          <p> 点击下载
-                                      </td>
-                                   </tr>
-                               </tbody>
-                             </table>
+                            <div class="tp-down-box">                          
+<a href="http://longzhiyuan.tk/user/download/玻璃仪器校正模板.xls" class="down-btn tp-down-btn" data-sm-link-text="点此下载" target="_blank"><span>仪器校正模板.xls</span></a></div>
                              <p>线性方程自动处理模板，只需输入测得的各个点数据即可自动获取方程各个参数以及残差度结果，
                                 可自行选择保留位数。分为两个版本，此为精简版。</p>
-                            <table>
-                               <tbody>
-                                   <tr>
-                                      <td>
-                              <a href="https://lzy-cave.github.io/mxx/user/download/精简版.xls">
-                                          <p> 点击下载
-                                      </td>
-                                   </tr>
-                               </tbody>
-                             </table>
+                           <div class="tp-down-box">                          
+<a href="http://longzhiyuan.tk/user/download/精简版.xls" class="down-btn tp-down-btn" data-sm-link-text="点此下载" target="_blank"><span>仪器校正精简版.xls</span></a></div>
                               <p>线性方程自动处理模板，只需输入测得的各个点数据即可自动获取方程各个参数以及残差度结果，
                                 可自行选择保留位数。分为两个版本，此为完整版，增加了方程增加两个Y值之差的参数参与计算。</p>
-                            <table>
-                               <tbody>
-                                   <tr>
-                                      <td>
-                              <a href="https://lzy-cave.github.io/mxx/user/download/完整版 .xls">
-                                          <p> 点击下载
-                                      </td>
-                                   </tr>
-                               </tbody>
-                             </table>
+                            <div class="tp-down-box">                          
+<a href="http://longzhiyuan.tk/user/download/完整版.xls" class="down-btn tp-down-btn" data-sm-link-text="点此下载" target="_blank"><span>仪器校正完整版.xls</span></a></div>
                                <p>药品含量测定计算，包括常规记录单成分、多成分药材、非药材的含量以及蒸散记录的含量计算</p>
-                            <table>
-                               <tbody>
-                                   <tr>
-                                      <td>
-                              <a href="https://lzy-cave.github.io/mxx/user/download/含量计算.xls">
-                                          <p> 点击下载
-                                      </td>
-                                   </tr>
-                               </tbody>
-                             </table>
+                            <div class="tp-down-box">                          
+<a href="http://longzhiyuan.tk/user/download/含量计算.xls" class="down-btn tp-down-btn" data-sm-link-text="点此下载" target="_blank"><span>含量计算模板.xls</span></a></div>
                            </p>
                            <p>
                           </p>
