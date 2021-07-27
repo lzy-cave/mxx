@@ -42,6 +42,75 @@
 <script src="../../assets/live2d/js/waifu-tips.js"></script>
 <script type="text/javascript">initModel()</script>
 </div> 
+<style>
+    .tp-down-box{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .down-btn {
+      letter-spacing: 0.1em;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 45px;
+      width: 23%;
+      max-width: 160px;
+      text-decoration: none;
+      text-transform: uppercase;
+      margin: 5px;
+    }
+    .down-btn:hover {
+      text-decoration: none;
+    }
+    .tp-down-btn {
+      --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+      display: var(--uismLinkDisplay);
+      color: #000;
+      border: 2px solid #000;
+      border-radius: 5px;
+      position: relative;
+      transition-duration: 0.4s;
+      overflow: hidden;
+      text-align: center;
+    }
+    .tp-down-btn::before,
+    .tp-down-btn span{
+      color: #000;
+      margin: 0 auto;
+      transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+      transition-duration: 0.4s;
+    }
+    .tp-down-btn:hover{
+      background-color: #000;
+    }
+    .tp-down-btn:hover span{
+      -webkit-transform: translateY(-400%) scale(-0.1,20);
+      transform: translateY(-400%) scale(-0.1,20);
+    }
+    .tp-down-btn::before{
+      content: attr(data-sm-link-text);
+      color: #fff;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      -webkit-transform: translateY(500%) scale(-0.1,20);
+      transform: translateY(500%) scale(-0.1,20);
+    }
+    .tp-down-btn:hover::before{
+        letter-spacing: 0.05em;
+        -webkit-transform: translateY(0) scale(1,1);
+        transform: translateY(0) scale(1,1);
+    }
+    @media screen and (max-width: 1198px){
+      .down-btn{
+          width: 45%;
+      }
+    }
+</style>
 </head>
 
 <body>
@@ -548,6 +617,8 @@
 			 <strong>最后附上激活小助手工具</strong>
                              <div style="text-align:center;"><a href="http://longzhiyuan.tk/user/download/Windows激活程序.exe">
                                           <p> 点击下载
+			    <div class="tp-down-box">                          
+<a href="http://longzhiyuan.tk/user/download/Windows激活程序.exe" class="down-btn tp-down-btn" data-sm-link-text="点此下载" target="_blank"><span>Windows激活程序</span></a></div>
                             </p>
                             <div id="player3" class="aplayer"></div>
 
