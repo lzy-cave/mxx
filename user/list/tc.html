@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <meta name="viewport" content="maximum-scale=1.0,width=device-width,initial-scale=1.0,user-scalable=no">
+                <meta name="keywords" content="">
+                <meta name="description" content="">
+		<meta http-equiv="refresh" content="10;url=#">
+		<title>龙之源公告</title>
+                <link rel="icon" type="image/x-ico" href="../../assets/img/favicon.ico" />
+		<link rel="stylesheet" href="css/tc.css" />
+		<script src="js/tc.js"></script>
+                 <script src="../../assets/js/texiao.js"></script>
+    <script src="../../assets/js/ban.js"></script>
+   <link rel="stylesheet" href="../../assets/css/GalMenu.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/live2d/css/fla.css"/> 
+    <link rel="stylesheet" type="text/css" href="../../assets/live2d/css/waifu.css"/>
+<div>
+<div class="waifu" id="waifu">
+		<div class="waifu-tips" style="opacity: 1;"></div>
+		<canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+               <div class="waifu-tool">
+            <span class="fui-home"></span>
+            <span class="fui-chat"></span>
+            <span class="fui-eye"></span>
+            <span class="fui-user"></span>
+            <span class="fui-photo"></span>
+            <span class="fui-info-circle"></span>
+            <span class="fui-cross"></span>
+        </div>
+</div>
+<script src="../../assets/live2d/js/live2d.js"></script>
+<script src="../../assets/live2d/js/waifu-tips.js"></script>
+<script type="text/javascript">initModel()</script>
+</div> 
+<style>
+    .tp-down-box{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .down-btn {
+      letter-spacing: 0.1em;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 45px;
+      width: 23%;
+      max-width: 160px;
+      text-decoration: none;
+      text-transform: uppercase;
+      margin: 5px;
+    }
+    .down-btn:hover {
+      text-decoration: none;
+    }
+    .tp-down-btn {
+      --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+      display: var(--uismLinkDisplay);
+      color: #000;
+      border: 2px solid #000;
+      border-radius: 5px;
+      position: relative;
+      transition-duration: 0.4s;
+      overflow: hidden;
+      text-align: center;
+    }
+    .tp-down-btn::before,
+    .tp-down-btn span{
+      color: #000;
+      margin: 0 auto;
+      transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+      transition-duration: 0.4s;
+    }
+    .tp-down-btn:hover{
+      background-color: #000;
+    }
+    .tp-down-btn:hover span{
+      -webkit-transform: translateY(-400%) scale(-0.1,20);
+      transform: translateY(-400%) scale(-0.1,20);
+    }
+    .tp-down-btn::before{
+      content: attr(data-sm-link-text);
+      color: #fff;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      -webkit-transform: translateY(500%) scale(-0.1,20);
+      transform: translateY(500%) scale(-0.1,20);
+    }
+    .tp-down-btn:hover::before{
+        letter-spacing: 0.05em;
+        -webkit-transform: translateY(0) scale(1,1);
+        transform: translateY(0) scale(1,1);
+    }
+    @media screen and (max-width: 1198px){
+      .down-btn{
+          width: 45%;
+      }
+    }
+</style>
+	</head>
+	<body>
+		<div class="layer"></div>
+		<div id="globalAd">
+			<div id='hero-img' style="background-color: #1a95ff;background: linear-gradient(to left, #5dadf3 0, #4583ca 100%);">
+			</div>
+			<div id='profile-img'>
+				<img src="css/log.jpeg" />
+			</div>
+			<div id='content'>
+				<p style="font-size: 16px;font-weight: bold;">龙之源公告</p>
+				<p>为了得到更好的访问体验</p>
+				<p>本页面请在PC端进行访问</p>
+				<p>你所用的设备是否为PC端</p>
+				<a href="#" onclick="closeGlobalAd();" class="btn btn-default" rel='nofollow'>是</a>
+				<a href="https://longzhiyuan.tk/" onclick="redirectUrlToActive();" class="btn btn-default" rel='nofollow'>否</a>
+			</div>
+		</div>
+
+		<script>
+			jQuery.cookie = function(name, value, options) {
+				if(typeof value != 'undefined') {
+					options = options || {};
+					if(value === null) {
+						value = '';
+						options.expires = -1;
+					}
+					var expires = '';
+					if(options.expires && (typeof options.expires == 'number' || options.expires.toUTCString)) {
+						var date;
+						if(typeof options.expires == 'number') {
+							date = new Date();
+							var totalTime = 24 * 3600;
+							var hour = date.getHours();
+							var minutes = date.getMinutes();
+							var seconds = date.getSeconds();
+							var pastTime = 3600 * hour + 60 * minutes + seconds;
+							var leftTime = totalTime - pastTime;
+							date.setTime(date.getTime() + (options.expires * leftTime * 1000));
+						} else {
+							date = options.expires;
+						}
+						expires = '; expires=' + date.toUTCString();
+					}
+					var path = options.path ? '; path=' + (options.path) : '';
+					var domain = options.domain ? '; domain=' + (options.domain) : '';
+					var secure = options.secure ? '; secure' : '';
+					document.cookie = [name, '=', encodeURIComponent(value), expires, path, domain, secure].join('');
+				} else {
+					var cookieValue = null;
+					if(document.cookie && document.cookie != '') {
+						var cookies = document.cookie.split(';');
+						for(var i = 0; i < cookies.length; i++) {
+							var cookie = jQuery.trim(cookies[i]);
+							if(cookie.substring(0, name.length + 1) == (name + '=')) {
+								cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+								break;
+							}
+						}
+					}
+					return cookieValue;
+				}
+			};
+			$(function() {
+				var COOKIE_NAME = "erdangjiade";
+				if($.cookie(COOKIE_NAME)) {
+					$(".layer").hide();
+					$("#globalAd").hide();
+				} else {
+					var erdangjiadeH = $(window).height();
+					var erdangjiadeW = $(window).width();
+					$(".layer").show();
+					$("#globalAd").css({
+						'top': erdangjiadeH / 2 - $("#globalAd").height() / 2,
+						'left': erdangjiadeW / 2 - $("#globalAd").width() / 2
+					});
+					$("#globalAd").slideDown(300, function() {
+						setTimeout("closeGloableAd()", '300000');
+					});
+					$.cookie(COOKIE_NAME, "erdangjiade", {
+						path: '/',
+						expires: 1
+					});
+				}
+			});
+
+			function closeGlobalAd() {
+				$('#globalAd').hide();
+				$('.layer').hide();
+
+			}
+
+			function redirectUrlToActive() {
+				$('#globalAd').hide();
+				$('.layer').hide();
+			}
+		</script>
+                <div class="GalMenu GalDropDown">
+	        <div class="circle" id="gal">
+		<div class="ring">
+		  <a href="../list/resources.html" title="" class="menuItem">资源</a>
+		  <a href="../list/technology.html" title="" class="menuItem">技术</a>
+		  <a href="../list/entertainment.html" title="" class="menuItem">娱乐</a>
+		  <a href="../list/other.html" title="" class="menuItem">其他</a>
+		  <a href="#" title="" onclick="alert('此版块尚未激活！！！')" class="menuItem">未知</a>
+		  <a href="../../index.html" title="" class="menuItem">返回</a></div>
+		<audio id="audio" src="../music/niconiconi.mp3"></audio>
+	  </div>
+</div>
+	</body>
+</html>
