@@ -24,6 +24,9 @@
    <link rel="stylesheet" href="../../assets/css/GalMenu.css" />
     <link rel="stylesheet" type="text/css" href="../../assets/live2d/css/fla.css"/> 
     <link rel="stylesheet" type="text/css" href="../../assets/live2d/css/waifu.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/mbox.css"/>
+    <script type="text/javascript" src="../../assets/js/tz.js" ></script>
+    <script type="text/javascript" src="../../assets/js/jm-tz.js" ></script>
 <div>
 <div class="waifu" id="waifu">
 		<div class="waifu-tips" style="opacity: 1;"></div>
@@ -233,7 +236,7 @@
                             </p>
                              <p>          不一样的浪漫，送给你爱的她！！！ </p>
 			    <div class="tp-down-box">
-    <a href="qixi.html"  onclick="alert('敬请期待！！！')" class="down-btn tp-down-btn" data-sm-link-text="点here观赏"><span>表白网页</span></a></div>
+    <a style="cursor: pointer" class="delcompanyClass";color:"blue"><span style="color:blue">表白网页</span></a>
                             <div id="player3" class="aplayer"></div>
 
                         </div>
@@ -307,6 +310,37 @@
     })
     
 </script>
+<script>
+					
+		$(".delcompanyClass").on('click',function(){
+
+			$.mbox({
+
+				area: [ "450px", "auto" ],
+   				border: [ 0, .5, "#666" ],
+
+				dialog: {
+
+					msg: "敬请期待！！！",
+
+					btns: 1,
+					type: 3,  
+ 
+					btn: [ "确定"],  
+					no: function() {  
+ 
+						return false;
+					},
+
+
+
+				}
+
+			});
+
+		});
+
+	</script>
 </body>
 
 </html>
