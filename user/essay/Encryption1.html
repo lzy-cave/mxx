@@ -1,0 +1,26 @@
+<title>请输入访问密码 </title>
+      <script src="../../assets/js/texiao.js"></script>
+    <script src="../../assets/js/ban.js"></script>
+<script type="text/javascript">
+function password() {   
+var testV = 1;   
+var pass1 = prompt('请输入访问密码:','');   
+while (testV < 1000000) {   
+if (!pass1)    
+history.go(-1);   
+if (pass1 == "曾梦婷") {
+alert('密码输入正确，即将进行跳转.....');   
+window.location.href="../zs/bdd.html";
+break;   
+}    
+testV+=1;   
+var pass1 =    
+prompt('密码输入错误','');  
+window.location.href="https://lzy-cave.github.io/mxx/user/essay/Encryption1.html";
+}   
+if (pass1!="password" & testV ==3)    
+history.go(-1);   
+return " ";   
+}    
+document.write(password());   
+</script>
